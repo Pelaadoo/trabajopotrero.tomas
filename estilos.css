@@ -1,0 +1,90 @@
+#titulo {
+  color: #129999 ;
+}
+.padre.1{
+border: 3px solid lightcoral;
+display: flex
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+background-image:url(https://img.freepik.com/vector-gratis/fondo-onda-blanca-suave_52683-55288.jpg?w=2000);
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: #f2f2f2;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+p {
+  border: none;
+  font-weight: bold;
+}
+
+p.e1 {
+  margin: 30px;
+  border: none;
+}
+
+p.e2 {
+  margin: 20px;
+  border: none;
+}
+
+.instagram i{
+  float: right;
+  font-size: 100px ;
+}
+
+.whatsapp i{
+  float: right;
+  font-size: 100px ;
+}
+
+.Youtube i{
+  float: right;
+font-size: 100px;
+
+ }
+
+.facebook i{
+  float: right;
+  font-size: 100px
+}
+
+
+
+}
+
+.pelado1{
+  font-size: 200px;
+}
+
+.pelado2{
+  font-size: 150px
+}
+.pelado3{
+  font-size: 150px
+}
+
+.centrar{
+text-align:center ;
+}
