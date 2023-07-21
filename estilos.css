@@ -4,14 +4,19 @@
 .padre.1{
 border: 3px solid lightcoral;
 display: flex
+backgroundred;
 
 }
 
 body {
   margin: 0;
   padding: 0;
-background-image:url(https://img.freepik.com/vector-gratis/fondo-onda-blanca-suave_52683-55288.jpg?w=2000);
-
+  background-image: url(https://img.freepik.com/vector-premium/fondo-vector-monocromo-blanco-abstracto-folleto-diseno-folleto-sitio-web-fondo-pantalla-blanco-geometrico-pagina-inicio-presentacion-certificado_249611-6006.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 .container {
   display: flex;
@@ -49,42 +54,90 @@ p.e2 {
   border: none;
 }
 
-.instagram i{
-  float: right;
-  font-size: 100px ;
-}
-
-.whatsapp i{
-  float: right;
-  font-size: 100px ;
-}
-
-.Youtube i{
-  float: right;
-font-size: 100px;
-
- }
-
-.facebook i{
-  float: right;
-  font-size: 100px
-}
-
-
-
+.container1{
+border: 1px solid green;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 }
 
 .pelado1{
-  font-size: 200px;
+border: 5px solid blue;
+padding: 100px;
+font-size: 20px;
+background-color: blue }
+
+.informacion1{
+border: 1px solid blue;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.padre1{
+border: 1px solid blue;
+padding: 100px;
+font-size: 20px;
 }
 
-.pelado2{
-  font-size: 150px
-}
-.pelado3{
-  font-size: 150px
-}
+ .contenedor{
+   max-width: 800px;
+   margin: 0 auto;
+   display: flex;
+ }
 
-.centrar{
-text-align:center ;
+ .izquierda{
+border: 1px solid blue;
+padding: 100px;
+font-size: 40px;
+flex: 1;
+margin-right: 20px;
+ }
+
+ .derecha{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin-right: 20px;
+   font-size: 40px;
+ }
+
+ .redes {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 20px;
+   font-size: 40px;
+ }
+
+ .foto {
+   width: 20%;
+   height: 20%;
+   margin: 0px 40%;
+ }
+ .foto1 {
+   width: 20%;
+   height: 20%;
+   margin: 0px 40%;
+ }
+ .foto2 {
+   width: 20%;
+   height: 20%;
+   margin: 0px 40%;
+ }
+
+ .centrar {
+   text-align: right;
+
+
+ }
+
+.calle, .center, .redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+h3{
+  font-size: 4rem;
 }
