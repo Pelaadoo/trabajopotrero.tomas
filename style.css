@@ -1,0 +1,182 @@
+#titulo {
+    color: #129999 ;
+  }
+  .padre1{
+  border: 3px solid lightcoral;
+  display: flex
+  backgroundred;
+
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-vector-monocromo-blanco-abstracto-folleto-diseno-folleto-sitio-web-fondo-pantalla-blanco-geometrico-pagina-inicio-presentacion-certificado_249611-6006.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+  }
+
+  .ingredientes {
+    color: blue;
+  }
+
+  .instrucciones {
+    color:#F39C12
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .item {
+    width: 200px;
+    height: 200px;
+    background-color: #f2f2f2;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  p {
+    border: none;
+    font-weight: bold;
+  }
+
+  p.e1 {
+    margin: 30px;
+    border: none;
+  }
+
+  p.e2 {
+    margin: 20px;
+    border: none;
+  }
+
+  .container1{
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+
+  .pelado1{
+  border: 5px solid blue;
+  padding: 100px;
+  font-size: 20px;
+  background-color: blue }
+
+  .informacion1{
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  .padre1{
+  border: 1px solid blue;
+  padding: 100px;
+  font-size: 20px;
+  }
+
+   .contenedor{
+     max-width: 800px;
+     margin: 0 auto;
+     display: flex;
+   }
+
+   .izquierda{
+  border: 1px solid blue;
+  padding: 100px;
+  font-size: 40px;
+  flex: 1;
+  margin-right: 20px;
+  background-color: powderblue;
+  flex-direction: column;
+}
+
+   .derecha{
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     margin-right: 20px;
+     font-size: 40px;
+   }
+
+   .redes {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 20px;
+     font-size: 40px;
+   }
+
+   .foto {
+     width: 20%;
+     height: 20%;
+     margin: 0px 40%;
+   }
+   .foto1 {
+     width: 20%;
+     height: 20%;.caja_mapa_padre{
+  display: flex;
+}
+.caja_mapa_hijo{
+  flex-wrap: wrap;
+  width: 50%;
+  height: 50%;
+}
+     margin: 0px 40%;
+   }
+   .foto2 {
+     width: 20%;
+     height: 20%;
+     margin: 0px 40%;
+   }
+
+   .centrar {
+     text-align: right;
+
+
+   }
+
+  .calle, .center, .redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  h3{
+    font-size: 4rem;
+  }
+  .caja_mapa_padre{
+  display: flex;
+}
+.caja_mapa_hijo{
+  flex-wrap: wrap;
+  width: 50%;
+  height: 50%;
+}
+
+
+  @media (max-width: 700px) {
+    .computadora {
+      display: none
+    }
+  }
+
+@media  (min-width: 700px) {
+  .telefonos {
+    display: none;
+  }
+}
