@@ -36,7 +36,8 @@
   }
 
   .item {
-    width: 200px;
+    width: 200px;  <h2 class="telefonos">veras esto si estas en telefono</h2>
+    <h2 class="computadora">veras esto si estas en computadora</h2>
     height: 200px;
     background-color: #f2f2f2;
     margin: 10px;
@@ -88,10 +89,27 @@
   font-size: 20px;
   }
 
+
+
    .contenedor{
      max-width: 800px;
      margin: 0 auto;
      display: flex;
+     border: solid #999;
+   }
+   .contenedor2{
+     max-width: 800px;
+     margin: 0 auto;
+     display: flex;
+     border: solid #999;
+     font-size: 1rem
+   }
+   .izquierda2{
+     display: flex;
+     align-items: center;
+     font-size: 1rem;
+
+}
    }
 
    .izquierda{
@@ -131,7 +149,7 @@
   display: flex;
 }
 .caja_mapa_hijo{
-  flex-wrap: wrap;
+   flex-wrap: wrap;
   width: 50%;
   height: 50%;
 }
@@ -179,4 +197,44 @@
   .telefonos {
     display: none;
   }
+}
+
+
+
+.cartas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.card{
+  width: 350px;
+  height: 450px;
+  border: solid #999;
+
+}
+
+.imagenes{
+  width: 344px ;
+  height:100px;
+}
+
+.receta {
+  display: flex; /* Utilizamos flexbox para crear el diseño de dos columnas */
+}
+
+.ingredientes {
+  flex: 1; /* El primer elemento (ingredientes) ocupará 1/2 del ancho */
+  padding: 10px;
+  border-right: 1px solid #ccc; /* Agregamos un borde derecho para separar las columnas */
+}
+
+.preparacion {
+  flex: 1; /* El segundo elemento (preparación) ocupará 1/2 del ancho */
+  padding: 10px;
+}
+.imagenes2{
+  width: 300px ;
+  height:300px
 }
