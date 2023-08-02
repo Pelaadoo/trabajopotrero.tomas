@@ -249,3 +249,32 @@ padding: 10vw
 .camion{
 border: 1px solid black;
 }
+
+
+.pelado3{
+  border: 2px solid black;
+}
+
+.track1{
+  color:  #e8790f;
+}
+
+.track2{
+  color: green;
+}
+
+.track3{
+  color: blue;
+}
+
+.track4{
+  color: red;
+  width: 10%;
+  height:10%;
+}
+
+.centrar2 {
+  text-align: right;
+  width: 30px;
+height:30px;
+}
