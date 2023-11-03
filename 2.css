@@ -1,0 +1,18 @@
+body{
+
+  background-repeat: no-repeat;
+  background-size: 100% 250%;
+display: flex;
+justify-content: center;
+background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/03/83/64561fca51da066.jpg);
+}
+
+.formulario{
+background-color: white;
+margin: 0% 50%;
+}
+
+
+.peladon{
+  color: white
+}
