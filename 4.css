@@ -1,0 +1,11 @@
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-preguntas_23-2148159239.jpg);
+
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
