@@ -1,0 +1,31 @@
+.contenedor {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh; /* Altura completa de la ventana del navegador */
+
+       }
+
+
+
+       .pie-de-pagina {
+           border: 2px solid black; /* Agregar un borde visible */
+           padding: 20px; /* Espacio interno de la caja */
+           width: 50%; /* Ancho de la caja */
+       }
+       .table {
+             width: 100%;
+             border-collapse: collapse;
+              background-color: green;
+           }
+
+           th, td {
+             border: 6px solid #dddddd;
+             padding: 10px;
+             text-align: left;
+              background-color: #8B9F98 ;
+           }
+
+           th {
+             background-color: green;
+           }

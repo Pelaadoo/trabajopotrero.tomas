@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="6.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="6.css">
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <ul id="productList">
+        <!-- Aquí se cargarán los datos de los productos como elementos de lista -->
+    </ul>
+
+    <script>
+        // Suponiendo que tienes archivos separados para cada producto (por ejemplo: producto1.html, producto2.html)
+        // Puedes usar JavaScript para cargar estos archivos y mostrar la información en la lista.
+
+        // Función para cargar un archivo de producto y agregarlo a la lista
+        function cargarProducto(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    const parser = new DOMParser();
+                    const htmlDocument = parser.parseFromString(data, 'text/html');
+                    const productDetails = htmlDocument.querySelector('#productDetails');
+
+                    // Asumiendo que el contenido del archivo tiene una estructura con ID 'productDetails'
+                    document.querySelector('#productList').appendChild(productDetails);
+                })
+                .catch(error => console.error(error));
+        }
+
+        // Cargar cada producto en la lista
+        cargarProducto('producto1.html');
+        cargarProducto('producto2.html');
+        // Puedes seguir agregando más productos según sea necesario.
+
+
+
+
+    </script>
+
+
+
+  <div class="centro">
+      <div class="caja">
+          <div class="encabezado">
+              <!-- Contenido del encabezado aquí -->
+              <div class="carrito">
+                <h2>Carrito de Compras</h2>
+                <ul id="lista-carrito" class="lista-carrito">
+                  <!-- Aquí se agregarán los productos -->
+                </ul>
+                <p class="total">Total: <span id="total">0</span> USD</p>
+              </div>
+          </div>
+
+
+          <div class="cuerpo">
+              <!-- Contenido del cuerpo aquí -->
+
+                  <table>
+                    <tr>
+   <th>Producto</th>
+   <th>Precio</th>
+   <th>Stock</th>
+ </tr>
+                      <td>Productos electronicos<td>
+
+
+                    <tr>
+                       <td>Auriculares de cable<td>
+                       <td>$11.99<td>
+                       <td>25</td>
+                    </tr>
+
+
+                        <tr>
+                       <td>Celulares<td>
+                       <td>$60.50<td>
+                         <td>45</td>
+                        </tr>
+
+                        <tr>
+                          <td>Fundas de celulares<td>
+                          <td>$3.75<td>
+                            <td>50</td>
+                        </tr>
+
+                        <tr>
+                          <td>vidrios templados<td>
+                          <td>$0.99<td>
+                                        <td>50</td>
+                        </tr>
+
+                        <tr>
+                          <td>computadoras<td>
+                          <td>$75.50<td>
+                                        <td>50</td>
+                        </tr>
+
+                        <tr>
+                          <td>mouse normales<td>
+                          <td>$td<td>
+                                        <td>50</td>
+                        </tr>
+
+                    <tr>
+                      <td>mouse gaming</td>
+                      <td>$6.50</td>
+                                  <td>50</td>
+                    </tr>
+
+                    <tr>
+                      <td>Mousepad</td>
+                      <td>$3.50</td>
+                                  <td>50</td>
+                    </tr>
+
+                    <tr>
+                      <td>cargador de celular</td>
+                      <td>$5.75</td>
+                                  <td>50</td>
+                    </tr>
+
+                    <tr>
+                      <td>roductos</td>
+                      <td>Descuentos</td>
+                                  <td>50</td>
+                    </tr>
+                     <tr>
+                      <td>Celular THL</td>
+                      <td>$45.99</td>
+                                  <td>50</td>
+                    </tr>
+                    <tr>
+                      <td>Computadora HLC</td>
+                      <td>$54.99</td>
+                                  <td>50</td>
+                    </tr>
+
+                    <tr>
+                      <td>camara PC</td>
+                      <td>$7.75</td>
+                                  <td>50</td>
+                    </tr>
+<
+           <td>parlante grande</td>
+                      <td>$13</td>
+                                  <td>50</td>
+<tr/>
+<tr>
+                        <td>parlante grande</td>
+                        <td>$17.99</td>
+                                    <td>50</td>
+                                  </tr>
+<tr>
+                           <td>Smart TV Philips</td>
+                          <td>$79.99</td>
+                                      <td>50</td>
+                                    </tr>
+<tr>
+                            <td>foco led</td>
+                            <td>$3.75</td>
+                                        <td>50</td>
+                                      </tr>
+<tr>
+                              <td>porta auriculares</td>
+                              <td>$5.75</td>
+                                          <td>50</td>
+                                        </tr>
+<tr>
+                                <td>Samsungh2TV<td>
+                                <td>$68.99<td>
+                                <td>50</td>
+                              </tr>
+<tr>
+                                  <td>TLC Smarth<td>
+                                  <td>$86.99<td>
+                                                <td>50</td>
+                                              </tr>
+<tr>
+                                    <td>monitor samsung<td>
+                                    <td>$50.75<td>
+                                                  <td>50</td>
+                                          </tr>
+<tr>
+                                      <td>monitos TLC<td>
+                                      <td>$45<td>
+                                                    <td>50</td>
+                                          </tr>
+<tr>
+                                        <td>marco led<td>
+                                        <td>$10.75<td>
+                                                      <td>50</td>
+</tr>
+                    <!-- Puedes agregar más filas según sea necesario -->
+                  </table>
+
+
+
+
+      </div>
+          <div class="pie-de-pagina">
+              <!-- Contenido del pie de página aquí -->
+              <form class="" action="index.html" method="post">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               <script>
+                   function calcularPrecio() {
+                       var precioUnitario = parseFloat(document.getElementById('precioUnitario').value);
+                       var cantidad = parseInt(document.getElementById('cantidad').value);
+                       var descuentoPorcentaje = parseFloat(document.getElementById('descuento').value);
+
+                       var precioTotal = precioUnitario * cantidad;
+                       var descuento = precioTotal * (descuentoPorcentaje / 100);
+                       var precioConDescuento = precioTotal - descuento;
+
+                       document.getElementById('precioTotal').innerHTML = "$" + precioConDescuento.toFixed(2);
+                   }
+
+
+
+               </script>
+
+
+            <div class="border">
+
+
+               <form>
+
+
+                   <label for="precioUnitario">Precio Unitario:</label>
+
+
+                   <input type="number" id="precioUnitario" placeholder="Ingrese el precio unitario" step="0.01"><br><br>
+
+
+                   <label for="cantidad">Cantidad:</label>
+
+
+                   <input type="number" id="cantidad" placeholder="Ingrese la cantidad"><br><br>
+
+
+                   <label for="descuento">Descuento (%):</label>
+
+
+                   <input type="number" id="descuento" placeholder="Ingrese el porcentaje de descuento"><br><br>
+
+
+                   <button type="button" onclick="calcularPrecio()">Calcular Precio</button>
+
+
+               </form>
+
+
+
+               <p>Precio Total con Descuento: <span id="precioTotal">$0.00</span></p>
+
+
+             </form>
+
+
+            <div/>
+
+
+
+            <form id="formulario" onsubmit="return validarFormulario()">
+              <input type="text" id="nombre" placeholder="Nombre" required>
+              <input type="email" id="email" placeholder="Correo electrónico" required>
+              <button type="submit">Enviar</button>
+            </form>
+
+            <script>
+              function validarFormulario() {
+                // Validación de campos
+                let nombre = document.getElementById('nombre').value;
+                let email = document.getElementById('email').value;
+
+                if (nombre === 'pelado' || email === 'pelado') {
+                  alert('Por favor, complete todos los campos.');
+                  return false; // Evita que se envíe el formulario si hay campos vacíos
+                }
+
+                // Otras validaciones como formato de email, etc.
+
+                return true; // Envía el formulario si pasa la validación
+              }
+            </script>
+
+
+            <div id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito">
+            <!-- Elementos del carrito se agregan dinámicamente aquí -->
+            </ul>
+            <p>Total: <span id="total">0</span> USD</p>
+            </div>
+
+            <script>
+            let total = 0;
+
+            function agregarAlCarrito(nombre, precio) {
+            const listaCarrito = document.getElementById('lista-carrito');
+            const elemento = document.createElement('li');
+            elemento.textContent = `${nombre} - ${precio} USD`;
+            listaCarrito.appendChild(elemento);
+
+            total += precio;
+            document.getElementById('total').textContent = total;
+            }
+            </script>
+          </div>
+      </div>
+  </div>
+
+
+
+</body>
+</html>
