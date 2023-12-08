@@ -26,6 +26,7 @@
 
         <p class="price">Precio: $3500</p>
         <button class="buy-button">Comprar</button>
+          <button class="delete-btn" data-product-id="1">Eliminar</button>
       </div>
 
        <div class="product">
@@ -44,6 +45,7 @@
 
         <p class="price">Precio: $3500</p>
         <button class="buy-button">Comprar</button>
+        <button class="delete-btn" data-product-id="1">Eliminar</button>
       </div>
       <div class="product">
        <img src="https://http2.mlstatic.com/D_NQ_NP_723332-MLA49796459464_042022-O.webp" alt="Producto 2">
@@ -61,12 +63,26 @@
 
        <p class="price">Precio: $10.500</p>
        <button class="buy-button">Comprar</button>
+       <button class="delete-btn" data-product-id="1">Eliminar</button>
      </div>
 
       <!-- Agrega más productos según sea necesario -->
     </div>
   </div>
   <script src="10.js"></script>
+  <script>
+      // Agregar un evento click a cada botón de eliminar
+      document.querySelectorAll('.delete-btn').forEach(button => {
+          button.addEventListener('click', function() {
+              const productId = this.dataset.productId;
+              const confirmation = confirm(`¿Estás seguro de que quieres eliminar el producto ${productId}?`);
 
+              if (confirmation) {
+
+                  this.parentNode.remove(); // Elimina el elemento padre (el div que contiene el producto)
+              }
+          });
+      });
+  </script>
 </body>
 </html>
